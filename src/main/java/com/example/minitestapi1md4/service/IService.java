@@ -13,8 +13,7 @@ public interface IService<T> {
 
     Optional<T> findById(Long id);
 
-    void delete(Long id);
+    void remove(Long id);
 
-    Page<T> findAllByNameContaining(Pageable pageable, String name);
 
 }
